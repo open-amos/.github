@@ -1,8 +1,8 @@
 ## AMOS
 
-**Open-source analytics model stack for private equity, venture capital, and private markets.**
+**Open-source analytics model stack for private markets.**
 
-Private markets teams often live with different versions of the truth—numbers vary between CRM exports, fund admin portals, portfolio systems, and spreadsheets. AMOS gives you one consistent foundation for performance, exposure, and operations so investment, finance, and operations teams work from the same numbers. Ship dashboards faster, close the books with fewer surprises, and power AI assistants on trusted tables.
+Private markets teams often live with different versions of the truth. Numbers vary between CRM exports, fund admin portals, portfolio systems, and spreadsheets. AMOS gives you one consistent foundation for performance, exposure, and operations so investment, finance, and operations teams work from the same numbers. Ship dashboards faster, close the books with fewer surprises, and power AI assistants on trusted tables.
 
 ## Why AMOS
 

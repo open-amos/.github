@@ -13,22 +13,18 @@
 > Core architecture, models, and patterns are functional but still evolving.  
 > Expect incomplete coverage and active iteration across components.
 
-AMOS helps private markets funds modernize their data foundations — reducing reporting time, improving transparency, and preparing for AI-driven analysis.
-
-Built by professionals from technology and impact finance, AMOS (the **Asset Management Operating System**) connects to existing systems, unifies and normalizes data, and delivers a clean, analytics-ready foundation for reporting, dashboards, and intelligent applications.
-
-AMOS is **open-source**, **cloud-agnostic**, and **vendor-independent**, giving funds full control of their architecture while enabling shared data standards across the industry. It supports both new funds building a modern data stack from the start and established funds looking to modernize legacy systems.
-
 ## What is AMOS?
 
-AMOS is a modern, open-source data stack purpose-built for private markets. It provides the core infrastructure to turn fragmented operational data into a consistent, intelligent foundation for analysis and automation:
+AMOS (the **Asset Management Operating System**) is a modern, open-source data stack purpose-built for private markets. It helps both emerging and established funds reduce reporting time, improve transparency, and prepare for AI-driven analysis. AMOS provides the core infrastructure to turn fragmented operational data from multiple sources into a consistent, intelligent foundation for analysis and automation:
 
-- Canonical data model for funds, portfolios, deals, accounts, and entities  
-- Automated pipelines to extract, align, and transform data from source systems  
-- Curated data marts for reporting and live dashboards 
+- Automated pipelines to extract and centralize data from multiple source systems (CRM, portfolio management, fund admin, accounting systems, etc.)
+- Canonical data model for funds, portfolios, deals, accounts, and entities   
+- Curated data marts and metrics for reporting and live dashboards 
 - Modular, cloud-agnostic architecture for flexible deployment   
-- **MCP server integration** — exposes AMOS data and semantics to AI assistants and notebooks using the [Model Context Protocol](https://modelcontextprotocol.io)   
-- **REST API** — programmatic access to canonical data and metrics for external systems  
+- MCP server integration — exposes AMOS data and semantics to AI assistants and notebooks using the [Model Context Protocol](https://modelcontextprotocol.io)   
+- REST API — programmatic access to canonical data and metrics for external systems
+
+AMOS is **open-source**, **cloud-agnostic**, and **vendor-independent**, giving funds full control of their architecture while enabling shared data standards across the industry. 
 
 ## Who It’s For
 

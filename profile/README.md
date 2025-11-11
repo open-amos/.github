@@ -31,26 +31,6 @@ AMOS is **open-source**, **cloud-agnostic**, and **vendor-independent**, giving 
 - **Emerging funds** looking for a lightweight but robust data foundation to support efficient operations, reliable reporting, and AI-readiness from day one  
 - **Established funds** seeking to modernize legacy systems and simplify complex data architectures without vendor lock-in  
 
-## Why AMOS
-
-- **Unified data foundation** — one canonical model and shared vocabulary across funds and systems  
-- **Faster time to insight** — prebuilt transformations, marts, and dashboards accelerate delivery  
-- **Architectural independence** — open, modular components that evolve with your strategy  
-
-## Architecture Overview
-
-```mermaid
-flowchart TD
-  raw["Raw sources (CRM, fund admin, finance, portfolio management)"]
-  staging["Staging (source-aligned models)"]
-  intermediate["Intermediate (normalized transforms, IDs, harmonization)"]
-  core["Core (canonical model and curated marts)"]
-  semantic["Semantic & metric layer (MCP for AI, BI, and assistants)"]
-  apps["Dashboards, notebooks, BI tools, AI assistants, REST API (upcoming)"]
-
-  raw --> staging --> intermediate --> core --> semantic --> apps
-```
-
 ## Project Components
 
 - **Starter** — Thin orchestrator that ties AMOS Core and Source Example together
@@ -71,6 +51,37 @@ flowchart TD
 2. Explore the canonical data model in [AMOS Core](../core).  
 3. Review source mappings and transformation patterns in [Source Example](../source-example).  
 4. Launch the [Dashboard](../dashboard-example) to explore metrics and visualizations.  
+
+## Current Scope, Roadmap, and Customization
+
+### Current Scope
+
+AMOS currently supports core private markets use cases and data sources:
+
+- Canonical model and base metrics for **Private Equity** and **Private Credit** workflows  
+- Integration patterns for key systems: **deal pipeline**, **portfolio management**, **fund administration**, and **accounting**
+
+The existing components provide a functional foundation for consolidating and analyzing fund, portfolio, and deal data — enough to demonstrate the full data flow from source extraction to analytics.
+
+### Roadmap
+
+AMOS is evolving toward broader coverage across asset classes and workflows. Upcoming milestones include:
+
+- Additional models and metrics for **ESG**, **impact measurement**, and other asset types  
+- Extended data connectors and transformation patterns  
+- A public **REST API** for external programmatic access  
+- **MCP server integration** for AI assistants and notebooks  
+- Prebuilt **dashboards** and **utility apps** for reporting, reconciliation, and data management
+
+### Customization and Extensibility
+
+AMOS is built to be extended. You can:
+
+- Add new source connectors and models for your specific systems  
+- Define custom marts and metrics tailored to your fund’s reporting needs  
+- Package extensions as standalone AMOS-compatible modules
+
+To maintain upgrade compatibility, avoid editing the AMOS Core directly. Instead, use the **AMOS Source Example** and **AMOS Core** marts as templates to develop your own packages while keeping AMOS Core as the foundation of your data stack.
 
 ## Documentation
 

@@ -3,7 +3,7 @@
 ![image](https://img.shields.io/badge/version-0.1.0-blue?style=for-the-badge) ![image](https://img.shields.io/badge/status-proof--of--concept-yellow?style=for-the-badge) ![image](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white) ![image](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white) ![image](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ---
-**Overview** | [Starter](../starter) | [Core](../core) | [Source Example](../source-example) | [Dashboard](../dashboard-example)
+**Overview** | [Starter](/open-amos/starter) | [Core](/open-amos/core) | [Source Example](/open-amos/source-example) | [Dashboard](/open-amos/dashboard-example)
 
 ---
 

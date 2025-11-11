@@ -1,49 +1,88 @@
-## AMOS
+# AMOS
 
-**Open-source analytics model stack for private markets.**
+![image](https://img.shields.io/badge/version-0.1.0-blue?style=for-the-badge) ![image](https://img.shields.io/badge/status-proof--of--concept-yellow?style=for-the-badge) ![image](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white) ![image](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white) ![image](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-Private markets teams often live with different versions of the truth. Numbers vary between CRM exports, fund admin portals, portfolio systems, and spreadsheets. AMOS gives you one consistent foundation for performance, exposure, and operations so investment, finance, and operations teams work from the same numbers. Ship dashboards faster, close the books with fewer surprises, and power AI assistants on trusted tables.
+---
+**Overview** | [Starter](../starter) | [Core](../core) | [Source Example](../source-example) | [Dashboard](../dashboard-example)
 
-## Why AMOS
+---
 
-- **One source of truth**: standardized entities and definitions across funds, portfolios, deals, and entities
-- **Faster time-to-insight**: prebuilt pipelines and patterns so you can focus on decisions, not plumbing
-- **Cloud-agnostic**: works with modern warehouses and your preferred BI/AI tools
+# AMOS Overview
+
+> **Project status:** AMOS is currently in an early proof-of-concept stage (v0.1.0).  
+> Core architecture, models, and patterns are functional but still evolving.  
+> Expect incomplete coverage and active iteration across components.
+
+AMOS helps private markets funds modernize their data foundations — reducing reporting time, improving transparency, and preparing for AI-driven analysis.
+
+Built by professionals from technology and impact finance, AMOS (the **Asset Management Operating System**) connects to existing systems, unifies and normalizes data, and delivers a clean, analytics-ready foundation for reporting, dashboards, and intelligent applications.
+
+AMOS is **open-source**, **cloud-agnostic**, and **vendor-independent**, giving funds full control of their architecture while enabling shared data standards across the industry. It supports both new funds building a modern data stack from the start and established funds looking to modernize legacy systems.
 
 ## What is AMOS?
 
-AMOS is a set of open-source packages that turn messy operational data into clean, analytics-ready tables. Start with the orchestrator, plug in your sources, and build on a durable foundation for reporting and analysis.
+AMOS is a modern, open-source data stack purpose-built for private markets. It provides the core infrastructure to turn fragmented operational data into a consistent, intelligent foundation for analysis and automation:
 
-## The AMOS Ecosystem
+- Canonical data model for funds, portfolios, deals, accounts, and entities  
+- Automated pipelines to extract, align, and transform data from source systems  
+- Curated data marts for reporting and live dashboards 
+- Modular, cloud-agnostic architecture for flexible deployment   
+- **MCP server integration** — exposes AMOS data and semantics to AI assistants and notebooks using the [Model Context Protocol](https://modelcontextprotocol.io)   
+- **REST API** — programmatic access to canonical data and metrics for external systems  
 
-| Package | Purpose | Layer | Status |
-|---------|---------|-------|--------|
-| **AMOS Starter** | Orchestrator that ties everything together | Orchestration | ⭐ Start here |
-| **AMOS Source Example** | Source integration patterns and example data | Staging + Intermediate | Imported |
-| **AMOS Core** | Canonical model for private markets | Marts | Imported |
+## Who It’s For
 
-- Starter: `https://github.com/open-amos/starter`
-- Source Example: `https://github.com/open-amos/source-example`
-- Docs for Core: `https://docs.amos.tech`
+- **Emerging funds** looking for a lightweight but robust data foundation to support efficient operations, reliable reporting, and AI-readiness from day one  
+- **Established funds** seeking to modernize legacy systems and simplify complex data architectures without vendor lock-in  
 
-## Who it’s for
+## Why AMOS
 
-- Fund managers and operating partners who need consistent KPIs and faster reporting
-- Tech generalists and data leads who want a clean foundation without reinventing the wheel
-- Data teams who prefer open-source, modular building blocks
+- **Unified data foundation** — one canonical model and shared vocabulary across funds and systems  
+- **Faster time to insight** — prebuilt transformations, marts, and dashboards accelerate delivery  
+- **Architectural independence** — open, modular components that evolve with your strategy  
+
+## Architecture Overview
+
+```mermaid
+flowchart TD
+  raw["Raw sources (CRM, fund admin, finance, portfolio management)"]
+  staging["Staging (source-aligned models)"]
+  intermediate["Intermediate (normalized transforms, IDs, harmonization)"]
+  core["Core (canonical model and curated marts)"]
+  semantic["Semantic & metric layer (MCP for AI, BI, and assistants)"]
+  apps["Dashboards, notebooks, BI tools, AI assistants, REST API (upcoming)"]
+
+  raw --> staging --> intermediate --> core --> semantic --> apps
+```
+
+## Project Components
+
+- **Starter** — Thin orchestrator that ties AMOS Core and Source Example together
+  → [Read more](../starter)  
+- **Core** — Canonical dimensional model and curated marts  
+  → [Read more](../core)  
+- **Source Example** — Sample connectors and mapping patterns  
+  → [Read more](../source-example)  
+- **Dashboard** — Example analytics and KPI dashboards built on AMOS Core  
+  → [Read more](../dashboard-example)
+- **REST API** — programmatic access to canonical data and metrics for external systems (coming soon)
+- **MCP Server** — exposes AMOS data and semantics to AI assistants and notebooks (coming soon)
+- **AMOS Utility Apps** - Prebuilt apps for common use cases, eg data extraction, reconciliation, report generation, and more (coming soon)
+
+## Getting Started
+
+1. Start with the [AMOS Starter](../starter) to spin up the full stack.  
+2. Explore the canonical data model in [AMOS Core](../core).  
+3. Review source mappings and transformation patterns in [Source Example](../source-example).  
+4. Launch the [Dashboard](../dashboard-example) to explore metrics and visualizations.  
 
 ## Documentation
 
-Full documentation, guides, and architecture are at `https://docs.amos.tech`.
+Setup guides, architecture details, and API references:  
+`https://docs.amos.tech`
 
-## Contributing
+## Community & Support
 
-AMOS is open source and welcomes contributions. Report bugs, suggest features, and submit pull requests.
-
-## Community and Support
-
-- Docs: `https://docs.amos.tech`
-- Issues: GitHub Issues on each repo
-- Discussions: Join the community to share best practices
-
-
+- Documentation: `https://docs.amos.tech`  
+- Issues: Use GitHub Issues within each subproject  
+- Contributions: PRs welcome for connectors, mappings, transformations, tests, and documentation

@@ -32,24 +32,13 @@ AMOS is **open-source**, **cloud-agnostic**, and **vendor-independent**, giving 
 
 ## Project Components
 
-- **Starter** — Thin coordinator that wires AMOS Core and Source Example together
-  → [Read more](../starter)  
-- **Core** — Canonical dimensional model and curated marts  
-  → [Read more](../core)  
-- **Source Example** — Sample connectors and mapping patterns  
-  → [Read more](../source-example)  
-- **Dashboard** — Example analytics and KPI dashboards built on AMOS Core  
-  → [Read more](../dashboard-example)
+- **[Starter](https://github.com/open-amos/starter)** — Thin coordinator that wires AMOS Core and Source Example together
+- **[Core](https://github.com/open-amos/core)** — Canonical dimensional model and curated marts 
+- **[Source Example](https://github.com/open-amos/source-example)** — Sample connectors and mapping patterns  
+- **[Dashboard](https://github.com/open-amos/dashboard-example)** — Example analytics and KPI dashboards built on AMOS Core  
 - **REST API** — programmatic access to canonical data and metrics for external systems (coming soon)
 - **MCP Server** — exposes AMOS data and semantics to AI assistants and notebooks (coming soon)
-- **AMOS Utility Apps** - Prebuilt apps for common use cases, eg data extraction, reconciliation, report generation, and more (coming soon)
-
-## Getting Started
-
-1. Start with the [AMOS Starter](../starter) to spin up the full stack.  
-2. Explore the canonical data model in [AMOS Core](../core).  
-3. Review source mappings and transformation patterns in [Source Example](../source-example).  
-4. Launch the [Dashboard](../dashboard-example) to explore metrics and visualizations.  
+- **AMOS Utility Apps** - Prebuilt apps for common use cases, eg data extraction, reconciliation, report generation, and more (coming soon) 
 
 ## Current Scope
 

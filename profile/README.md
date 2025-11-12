@@ -85,3 +85,9 @@ To maintain upgrade compatibility, avoid editing the AMOS Core directly. Instead
 - Documentation: [https://docs.amos.tech](https://docs.amos.tech)
 - Issues: Use GitHub Issues within each subproject  
 - Contributions: PRs welcome for connectors, mappings, transformations, tests, and documentation
+
+## Licensing
+
+AMOS is currently in public preview.
+Each subproject README describes its temporary licensing terms.
+Final open-source or source-available licenses will be published before the 1.0 release.

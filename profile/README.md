@@ -17,7 +17,7 @@
 AMOS (the **Asset Management Operating System**) is a modern, open-source data stack purpose-built for private markets. It provides both emerging and established funds with the core infrastructure to turn fragmented operational data into a consistent, intelligent foundation for analysis and automation:
 
 - Automated pipelines to extract and centralize data from multiple source systems (CRM, portfolio management, fund admin, accounting systems, etc.)
-- Canonical data model for funds, portfolios, deals, accounts, and entities   
+- Canonical data model for funds, instruments, companies, opportunities, and other entities
 - Curated data marts and metrics for reporting and live dashboards 
 - Modular, cloud-agnostic architecture for flexible deployment   
 - MCP server integration — exposes AMOS data and semantics to AI assistants and notebooks using the [Model Context Protocol](https://modelcontextprotocol.io)   

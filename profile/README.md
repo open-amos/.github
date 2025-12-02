@@ -19,7 +19,12 @@ AMOS is **open-source**, **cloud- and database-agnostic**, and **vendor-independ
 ## Who It’s For
 
 - **Emerging funds** looking for a lightweight but robust data foundation to support efficient operations, reliable reporting, and AI-readiness from day one  
-- **Established funds** seeking to modernize legacy systems and simplify complex data architectures without vendor lock-in  
+- **Established funds** seeking to modernize legacy systems and simplify complex data architectures without vendor lock-in
+
+## Quick Start
+
+- Install [AMOS Starter](https://github.com/open-amos/starter) to run pipelines with sample source data and build the database.
+- Install [AMOS Dashboard](https://github.com/open-amos/dashboard-example) to visualize data in a demo dashboard.
 
 ## Project Components
 

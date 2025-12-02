@@ -13,14 +13,16 @@
 
 ## What is AMOS?
 
-AMOS (the **Asset Management Operating System**) is a modern, open-source data stack purpose-built for private markets. It provides both emerging and established funds with the core infrastructure to turn fragmented operational data into a consistent, intelligent foundation for analysis and automation:
+AMOS (the **Asset Management Operating System**) is a modern, open-source data stack purpose-built for private markets. It provides both emerging and established funds with the core infrastructure to turn fragmented operational data into a consistent, intelligent foundation for analysis and automation.
 
 AMOS is **open-source**, **cloud-agnostic**, and **vendor-independent**, giving funds full control of their architecture while enabling shared data standards across the industry. 
 
 ## Demo
 
 [→ demo.amos.tech](https://demo.amos.tech)
+
 ![image](https://amos.tech/wp-content/uploads/2025/04/screely-1764599384361-2048x1175.png)
+
 
 ## Who It’s For
 

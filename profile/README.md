@@ -23,12 +23,12 @@ AMOS is **open-source**, **cloud- and database-agnostic**, and **vendor-independ
 
 ## Project Components
 
-- **[Starter](https://github.com/open-amos/starter)** — Thin coordinator that bundles Core with sample data sources so teams can deploy a working AMOS instance quickly.
-- **[Core](https://github.com/open-amos/core)** — Central data model that defines shared entities, relationships, and metrics used across private-market operations; includes dimensional schemas and curated data marts.
-- **[Source Example](https://github.com/open-amos/source-example)** — Reference connectors and transformation logic that show how to ingest operational data from typical fund systems and map it into the Core model.
-- **[Dashboard](https://github.com/open-amos/dashboard-example)** — Sample BI implementation demonstrating how to build portfolio, fund, and operations dashboards directly on top of AMOS Core tables.
-- **REST API** (coming soon) - Service layer offering consistent, structured access to AMOS entities and metrics for integration with downstream tools and applications.
-- **MCP Server** (coming soon) - Interface that makes AMOS data model semantics available to AI agents and notebook environments for assisted querying and automation.
+- **[Starter](https://github.com/open-amos/starter)** (SQL, dbt) — Thin coordinator that bundles Core with sample data sources so teams can deploy a working AMOS instance quickly.
+- **[Core](https://github.com/open-amos/core)** (SQL, dbt) — Central data model that defines shared entities, relationships, and metrics used across private-market operations; includes dimensional schemas and curated data marts.
+- **[Source Example](https://github.com/open-amos/source-example)** (SQL, dbt) — Reference connectors and transformation logic that show how to ingest operational data from typical fund systems and map it into the Core model.
+- **[Dashboard](https://github.com/open-amos/dashboard-example)** (Javascript, Typescript, Svelte) — Sample BI implementation demonstrating how to build portfolio, fund, and operations dashboards directly on top of AMOS Core tables.
+- **REST API** (Python/FastAPI, coming soon) - Service layer offering consistent, structured access to AMOS entities and metrics for integration with downstream tools and applications.
+- **MCP Server** (Python/FastMCP, coming soon) - Interface that makes AMOS data model semantics available to AI agents and notebook environments for assisted querying and automation.
 - **AMOS Utility Apps** (coming soon) - Modular tools for recurring workflows such as data pulls, reconciliation tasks, and standardized report creation.
 
 ## System Architecture

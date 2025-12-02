@@ -10,7 +10,6 @@
 
 > AMOS is currently in an early proof-of-concept stage (v0.1.0).  
 > Core architecture, models, and patterns are functional but still evolving.  
-> Expect incomplete coverage and active iteration across components.
 
 ## What is AMOS?
 
@@ -20,9 +19,8 @@ AMOS is **open-source**, **cloud-agnostic**, and **vendor-independent**, giving 
 
 ## Demo
 
+[→ demo.amos.tech](https://demo.amos.tech)
 ![image](https://amos.tech/wp-content/uploads/2025/04/screely-1764599384361-2048x1175.png)
-
-[View Demo](https://demo.amos.tech)
 
 ## Who It’s For
 

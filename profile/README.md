@@ -16,14 +16,13 @@
 
 AMOS (the **Asset Management Operating System**) is a modern, open-source data stack purpose-built for private markets. It provides both emerging and established funds with the core infrastructure to turn fragmented operational data into a consistent, intelligent foundation for analysis and automation:
 
-- Automated pipelines to extract and centralize data from multiple source systems (CRM, portfolio management, fund admin, accounting systems, etc.)
-- Canonical data model for funds, instruments, companies, opportunities, and other entities
-- Curated data marts and metrics for reporting and live dashboards 
-- Modular, cloud-agnostic architecture for flexible deployment   
-- MCP server integration — exposes AMOS data and semantics to AI assistants and notebooks using the [Model Context Protocol](https://modelcontextprotocol.io)   
-- REST API — programmatic access to canonical data and metrics for external systems
-
 AMOS is **open-source**, **cloud-agnostic**, and **vendor-independent**, giving funds full control of their architecture while enabling shared data standards across the industry. 
+
+## Demo
+
+![image](https://amos.tech/wp-content/uploads/2025/04/screely-1764599384361-2048x1175.png)
+
+[View Demo](https://demo.amos.tech)
 
 ## Who It’s For
 
@@ -32,13 +31,13 @@ AMOS is **open-source**, **cloud-agnostic**, and **vendor-independent**, giving 
 
 ## Project Components
 
-- **[Starter](https://github.com/open-amos/starter)** — Thin coordinator that wires AMOS Core and Source Example together
-- **[Core](https://github.com/open-amos/core)** — Canonical dimensional model and curated marts 
-- **[Source Example](https://github.com/open-amos/source-example)** — Sample connectors and mapping patterns  
-- **[Dashboard](https://github.com/open-amos/dashboard-example)** — Example analytics and KPI dashboards built on AMOS Core  
-- **REST API** — programmatic access to canonical data and metrics for external systems (coming soon)
-- **MCP Server** — exposes AMOS data and semantics to AI assistants and notebooks (coming soon)
-- **AMOS Utility Apps** - Prebuilt apps for common use cases, eg data extraction, reconciliation, report generation, and more (coming soon) 
+- **[Starter](https://github.com/open-amos/starter)** — Thin coordinator that bundles Core with sample data sources so teams can deploy a working AMOS instance quickly.
+- **[Core](https://github.com/open-amos/core)** — Central data model that defines shared entities, relationships, and metrics used across private-market operations; includes dimensional schemas and curated data marts.
+- **[Source Example](https://github.com/open-amos/source-example)** — Reference connectors and transformation logic that show how to ingest operational data from typical fund systems and map it into the Core model.
+- **[Dashboard](https://github.com/open-amos/dashboard-example)** — Sample BI implementation demonstrating how to build portfolio, fund, and operations dashboards directly on top of AMOS Core tables.
+- **REST API** (coming soon) - Service layer offering consistent, structured access to AMOS entities and metrics for integration with downstream tools and applications.
+- **MCP Server** (coming soon) - Interface that makes AMOS data model semantics available to AI agents and notebook environments for assisted querying and automation.
+- **AMOS Utility Apps** (coming soon) - Modular tools for recurring workflows such as data pulls, reconciliation tasks, and standardized report creation.
 
 ## Current Scope
 

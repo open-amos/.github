@@ -6,7 +6,7 @@
 
 # Project Overview
 
-![image](https://img.shields.io/badge/version-0.1.0-blue?style=for-the-badge) ![image](https://img.shields.io/badge/status-proof--of--concept-yellow?style=for-the-badge) 
+![image](https://img.shields.io/badge/version-0.1.0-blue?style=for-the-badge) ![image](https://img.shields.io/badge/status-public--beta-yellow?style=for-the-badge) 
 
 > AMOS is currently in an early proof-of-concept stage (v0.1.0).  
 > Core architecture, models, and patterns are functional but still evolving.  
@@ -17,8 +17,47 @@ AMOS (the **Asset Management Operating System**) is a modern, open-source data s
 
 AMOS is **open-source**, **cloud-agnostic**, and **vendor-independent**, giving funds full control of their architecture while enabling shared data standards across the industry. 
 
+## Architecture Overview
+
+```mermaid
+  graph TD
+      S1[Excel/CSV Files]
+      S2[CRM Systems]
+      S3[Fund Administrator]
+      S4[Portfolio Management]
+      S5[Accounting Systems]
+      S6[More Sources...]
+      
+      ING[<b>Ingestion & Model Mapping</b><br/><i>AMOS Source Example</i>]
+      CORE[<b>Canonical Models & Metrics</b><br/><i>AMOS Core</i>]
+      
+      DASH[<b>BI Dashboards</b><br/><br/><i>AMOS Dashboard</i>, Power BI, Table, Metabase...]
+      APP[<b>Custom Applications<br/></b><br/><i>AMOS API</i><br/><i>coming soon</i>]
+      AI[<b>LLM integration</b><br/><br/><i>AMOS MCP</i><br/><i>-coming soon-</i>]
+      
+      S1 --> ING
+      S2 --> ING
+      S3 --> ING
+      S4 --> ING
+      S5 --> ING
+      S6 --> ING
+      
+      ING --> CORE
+      
+      CORE --> DASH
+      CORE --> APP
+      CORE -->|Semantic Layer| AI
+      
+      style ING fill:#E8E4F3
+      style CORE fill:#D6E9F8
+      style DASH fill:#FFF4E6
+      style APP fill:#E8F5E9
+      style AI fill:#E8F5E9
+```
+
 ## Demo
 
+Explore a dashboard demo built with AMOS Core, AMOS Source Example and AMOS Dashboard.
 [→ demo.amos.tech](https://demo.amos.tech)
 
 ![image](https://amos.tech/wp-content/uploads/2025/04/screely-1764599384361-2048x1175.png)

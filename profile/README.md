@@ -20,10 +20,11 @@ We split the project into modular components to ensure flexibility.
 
 | Repository | Purpose | Who is this for? |
 | :--- | :--- | :--- |
-| **[amos](https://github.com/open-amos/amos)** | **The Product.** Contains the installer, Docker setup, and documentation. | **Everyone starts here.** |
-| **[amos-core](https://github.com/open-amos/amos-core)** | **The Brain.** The dbt models and SQL logic that power the platform. | Data Engineers extending the logic. |
-| **[amos-dashboard](https://github.com/open-amos/amos-dashboard)** | **The UI.** A reference implementation of a BI dashboard for private markets. | Frontend devs & UI customizers. |
-| **[amos-source-example](https://github.com/open-amos/amos-source-example)** | **The Template.** Example data loaders and transformation patterns. | Engineers building new integrations. |
+| **[AMOS](https://github.com/open-amos/amos)** | **The Product.** Contains the installer, Docker setup, and documentation. | **Everyone starts here.** |
+| **[AMOS Core](https://github.com/open-amos/core)** | **The Brain.** The dbt models and SQL logic that power the platform. | Data Engineers extending the logic. |
+| **[AMOS Reconciliation](https://github.com/open-amos/amos-reconciliation)** <br/>*(Coming Soon)* | **The Glue.** A UI for mapping entities (e.g., "Seq" = "Sequoia") and resolving data conflicts across systems. | Data Stewards & Ops Teams. |
+| **[AMOS Dashboard](https://github.com/open-amos/dashboard)** | **The UI.** A reference implementation of a BI dashboard for private markets. | Frontend devs & UI customizers. |
+| **[AMOS Source Example](https://github.com/open-amos/source-example)** | **The Template.** Example data loaders and transformation patterns. | Engineers building new integrations. |
 
 ## Why Open Source?
 
